@@ -36,34 +36,75 @@ h1, h2, h3, h4 {
   color: white;
 }
 
-.site-header-cart:hover > li > a,
-.site-header ul.menu li.current-menu-item > a {
+.home .site-header-cart:hover > li > a,
+.home .site-header ul.menu li.current-menu-item > a {
   color: white;
 }
 
-.site-header ul.menu li.current-menu-item:before {
-  background-color: var(--primary-color);
-  content: ' ';
-  width: 50%;
-  height: 4px;
+.site-header .main-navigation {
+  float: right !important;
 }
 
+.main-navigation ul.menu>li>a,
+.main-navigation ul.nav-menu>li>a {
+    padding: 1rem 1.5rem;
+}
+
+.site-header ul.menu li.current-menu-item:after {
+    background-color: var(--primary-color);
+    content: ' ';
+    width: 50%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+}
+
+.site-header-cart .cart-contents {
+    width: 50%;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1041;
+}
 
 /**
  * Slider
  */
-
 .ls-wrapper.ls-in-out {
   width: 100% !important;
   left: 0 !important;
   top: 0 !important;
-  background-color: var(--secondary-color) !important;
 }
 
 img.ls-layer {
   width: 100% !important;
 }
 
+.fisio__slider--container {
+    width: 100%;
+    position: absolute;
+    margin-top: 25vh;
+    margin-left: 10vw;
+}
+
+.fisio__slider--headingH1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.fisio__slider--headingH2 {
+    color: white;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.3rem;
+}
 
 /**
  * Courses Grid
