@@ -168,8 +168,7 @@ img.ls-layer {
 }
 
 .fisio-curso__grid--metadata-container h2 {
-    font-size: 14px;
-    font-family: Arial, sans-serif;
+    font-size: 16px;
 }
 
 .fisio-curso__grid--metadata-container {
@@ -192,4 +191,43 @@ img.ls-layer {
   height: 4px;
   background-color: orange;
   display: block;
+}
+
+.fisio-curso__grid--woo-data {
+    padding-bottom: 0 !important;
+}
+
+.fisio-curso__grid--woo-data .vc_btn3-container.vc_btn3-inline {
+    margin-bottom: 10px;
+}
+
+.fisio-curso__grid--woo-data .vc_btn3-container.vc_btn3-inline a {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px !important;
+    text-transform: uppercase;
+    font-family: var(--font-headings);
+    font-size: 10px;
+}
+
+.fisio-home__contact form {
+    background-color: white;
+    padding: 1rem;
+}
+
+.fisio-home__contact form input {
+    width: 100%;
+    background: transparent;
+    border: 1px solid lightgray;
+    box-shadow: none;
+    padding: 0.5rem 1.5rem;
+}
+
+.fisio__register--hero {
+    background: var(--primary-color);
+    padding: 1rem;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    text-align: center;
+    color: white;
 }
