@@ -148,3 +148,12 @@ img.ls-layer {
 .fisio-curso__grid {
   border: solid 1px lightgray;
 }
+
+.fisio-curso__grid--image {
+    max-height: 175px;
+    overflow: hidden;
+}
+
+.fisio-curso__grid--metadata {
+  padding: 0 !important;
+}
