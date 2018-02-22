@@ -5,7 +5,11 @@
 :root {
   --primary-color: #f7ae23;
   --secondary-color: #141414;
-  --border1px: border 1px lightgray;
+  --font-headings: 'Roboto Slab', serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-headings);
 }
 
 
@@ -26,6 +30,22 @@
   clear: inherit !important;
   width: 50% !important;
   margin-right: 0 !important;
+}
+
+.main-navigation ul li a {
+  color: white;
+}
+
+.site-header-cart:hover > li > a,
+.site-header ul.menu li.current-menu-item > a {
+  color: white;
+}
+
+.site-header ul.menu li.current-menu-item:before {
+  background-color: var(--primary-color);
+  content: ' ';
+  width: 50%;
+  height: 4px;
 }
 
 
@@ -50,5 +70,5 @@ img.ls-layer {
  */
 
 .fisio-curso__grid {
-  border: var(--border1px);
+  border: solid 1px lightgray;
 }

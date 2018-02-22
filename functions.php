@@ -11,7 +11,7 @@
   */
 
  function fisio_scripts() {
-   wp_enqueue_style( 'hs-google-fonts', 'https://fonts.googleapis.com/css?family=Fira+Mono:400|Open+Sans+Condensed:700|Roboto+Condensed' );
+   wp_enqueue_style( 'fisio-google-fonts', 'https://fonts.googleapis.com/css?family=Roboto+Slab:700 ' );
    wp_enqueue_style( 'fisio-custom-css', get_stylesheet_directory_uri() . '/fisio-custom.css', array() );
  	 wp_enqueue_script( 'fisio-custom-js', get_stylesheet_directory_uri() . '/fisio-custom.js', array(), get_the_time(), true );
  }
@@ -25,8 +25,7 @@ function sf_child_theme_dequeue_style() {
      wp_dequeue_style( 'storefront-woocommerce-style' );
  }
  /**
- * Hook into Footer and echo Contact Form
- *
+ * Hook into Footer and change credits
  */
  if ( ! function_exists( 'storefront_credit' ) ) {
    //Function goes here
@@ -34,7 +33,7 @@ function sf_child_theme_dequeue_style() {
     $fisio = 'Hecho en Costa Rica Por';
     $myBrand = 'el.puas';
     $site_title = get_bloginfo( 'name' );
-    echo '<div class="site-info"><p> &copy; '.  date('Y') . ' ' . $site_title . ' ' . $fisio . ' ' . '<a href="https://elpuas.com" target="_blank">' . $myBrand . '</a></p></div>';
+    echo '<div class="site-info"><p> &copy; '.  date('Y') . ' ' . $site_title . ' | ' . $fisio . ' ' . '<a href="https://elpuas.com" target="_blank">' . $myBrand . '</a></p></div>';
    }
  }
  do_action( 'storefront_footer');
@@ -52,9 +51,12 @@ function add_and_remove() {
         add_action( 'storefront_header', 'storefront_header_cart', 20 );
 }
 
+
 /**
 * Hook into Footer and echo Contact Form
-* function add_contact_form_shortcode() {
+*  // Insert text below the Featured Products title
+*  function add_contact_form_shortcode() {
+*  	// Echo out content
 *  	echo '<div class="fisio__contact-form col-full">' . do_shortcode( '[contact-form-7 id="75" title="fisio"]', 'storefront' ) . '</div>';
 *  }
 *  add_action( 'storefront_before_footer' , 'add_contact_form_shortcode' );
