@@ -145,6 +145,10 @@ img.ls-layer {
  * Courses Grid
  */
 
+ .fisio-curso__hero-row {
+     margin-top: 10vh;
+ }
+
 .fisio-curso__grid {
   border: solid 1px lightgray;
 }
@@ -156,4 +160,36 @@ img.ls-layer {
 
 .fisio-curso__grid--metadata {
   padding: 0 !important;
+}
+
+.fisio-curso__grid--metadata-container h3 {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.fisio-curso__grid--metadata-container h2 {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.fisio-curso__grid--metadata-container {
+    margin-top: 100px;
+    border-bottom: solid 1px lightgray;
+}
+
+.fisio-curso__grid--metadata-container:before {
+  content: ' ';
+  width: 20%;
+  margin:0 auto;
+  height: 4px;
+  background-color: var(--primary-color);
+}
+
+.fisio-curso__grid .vc_gitem_row.vc_row.vc_gitem-row-position-middle:after {
+  content: '';
+  width: 20%;
+  margin: 0 auto;
+  height: 4px;
+  background-color: orange;
+  display: block;
 }
