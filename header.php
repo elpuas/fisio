@@ -19,7 +19,10 @@
 </head>
 
 <body <?php body_class(); ?>>
-
+<?php // Add Slider as Background
+if ( is_front_page()) { ?>
+<?php layerslider(1) ?>
+<?php } ?>
 <?php do_action( 'storefront_before_site' ); ?>
 
 <div id="page" class="hfeed site">
