@@ -91,9 +91,10 @@ img.ls-layer {
 }
 
 .fisio__slider--container {
-  width: 100%;
-  max-width: 80%;
-  margin: 25vh auto;
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 30vh;
 }
 
 .fisio__slider--headingH1 {
