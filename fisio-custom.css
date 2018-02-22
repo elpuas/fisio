@@ -19,6 +19,12 @@
 	border-bottom: none;
 }
 
+.site-header .main-navigation {
+	clear: inherit !important;
+	width: 50% !important;
+	margin-right: 0 !important;
+}
+
 /**
  * Slider
  */

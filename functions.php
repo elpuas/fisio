@@ -24,8 +24,10 @@ function sf_child_theme_dequeue_style() {
      wp_dequeue_style( 'storefront-style' );
      wp_dequeue_style( 'storefront-woocommerce-style' );
  }
-
-
+ /**
+ * Hook into Footer and echo Contact Form
+ *  // Insert text below the Featured Products title
+ */
  if ( ! function_exists( 'storefront_credit' ) ) {
    //Function goes here
    function storefront_credit() {
@@ -36,6 +38,20 @@ function sf_child_theme_dequeue_style() {
    }
  }
  do_action( 'storefront_footer');
+
+
+ /**
+ * Hook into Header and reorder items
+*/
+add_action( 'init' , 'add_and_remove' , 15 );
+function add_and_remove() {
+        remove_action( 'storefront_header', 'storefront_primary_navigation', 50 );
+        add_action( 'storefront_header', 'storefront_primary_navigation', 20 );
+        remove_action( 'storefront_header', 'storefront_product_search', 40 );
+        remove_action( 'storefront_header', 'storefront_header_cart', 60 );
+        add_action( 'storefront_header', 'storefront_header_cart', 20 );
+}
+
 
 /**
 * Hook into Footer and echo Contact Form
