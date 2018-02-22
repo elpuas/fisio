@@ -26,7 +26,7 @@ function sf_child_theme_dequeue_style() {
  }
  /**
  * Hook into Footer and echo Contact Form
- *  // Insert text below the Featured Products title
+ *
  */
  if ( ! function_exists( 'storefront_credit' ) ) {
    //Function goes here
@@ -52,12 +52,9 @@ function add_and_remove() {
         add_action( 'storefront_header', 'storefront_header_cart', 20 );
 }
 
-
 /**
 * Hook into Footer and echo Contact Form
-*  // Insert text below the Featured Products title
-*  function add_contact_form_shortcode() {
-*  	// Echo out content
+* function add_contact_form_shortcode() {
 *  	echo '<div class="fisio__contact-form col-full">' . do_shortcode( '[contact-form-7 id="75" title="fisio"]', 'storefront' ) . '</div>';
 *  }
 *  add_action( 'storefront_before_footer' , 'add_contact_form_shortcode' );
