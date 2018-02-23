@@ -3,7 +3,7 @@ jQuery(document).ready(function( $ ) {
 
  $.when( $('.fisioEventsDate').length > 0 ).done(
    function( eventsDateMod ) {
-   eventsDate = $('.fisioEventsDate > div');
+   eventsDate = $('.fisioEventsDate p');
    console.log(eventsDate);
   });
 });
