@@ -212,7 +212,6 @@ img.ls-layer {
 
 .fisio-home__contact form {
     background-color: white;
-    padding: 1rem;
 }
 
 .fisio-home__contact form input {
@@ -229,5 +228,59 @@ img.ls-layer {
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     text-align: center;
+
+}
+
+.fisio__register--hero h3 {
+  line-height: 2rem;
+  color: white;
+}
+
+.fisio__register--fields {
+    padding: 1rem;
+}
+
+.fisio-home__contact-welcome-text {
+    padding-top: calc(100% - 80%);
+}
+
+.fisio-home__contact-welcome-text h3 {
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.fisio-home__contact-welcome-text h3 span {
+  color: var(--primary-color);
+}
+
+.fisio-home__contact-welcome-text h2 {
     color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.fisio__row--text-block h3 {
+    color: white;
+}
+
+.fisio__row--text-block p a {
+    color: var(--primary-color);
+}
+
+.fisio__register--fields p:last-child {
+    margin-bottom: 0;
+}
+
+.fisio__register--fields .wpcf7-submit {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+}
+
+.fisio-events__grid--container > .vc_grid .vc_grid-item {
+    max-height: 320px !important;
 }
