@@ -32,13 +32,13 @@ jQuery(document).ready(function( $ ) {
                 // If this box is higher than the cached highest then store it
                 if($(this).height() > highestBox) {
                   highestBox = $(this).height();
-                  // console.log(highestBox);
+                  console.log(highestBox);
                 }
 
               });
 
               // Set the height of all those children to whichever was highest
-              $('.fisio-prof__grid--container > .wpb_wrapper').css({"height" : (highestBox + "px")});
+              $('.fisio-prof__grid--container .wpb_wrapper').css({"height" : (highestBox + "px")});
 
             });
         }
