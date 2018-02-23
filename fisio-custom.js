@@ -15,7 +15,7 @@ jQuery(document).ready(function( $ ) {
       console.log("Sin Separator: " + eventsDate + "\n");
     });
 
-    var whiteBackground = $('.fisio-prof__grid--container');
+    var whiteBackground = $('.fisio-prof__grid--container .vc_column-inner');
 
     if( whiteBackground.length > 0 ) {
             // console.log('Si Existe');
@@ -32,7 +32,7 @@ jQuery(document).ready(function( $ ) {
                 // If this box is higher than the cached highest then store it
                 if($(this).height() > highestBox) {
                   highestBox = $(this).height();
-                  console.log(highestBox);
+                  console.log('esta es la mas larga:' highestBox);
                 }
 
               });
