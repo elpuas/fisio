@@ -32,7 +32,7 @@ jQuery(document).ready(function( $ ) {
                 // If this box is higher than the cached highest then store it
                 if($(this).height() > highestBox) {
                   highestBox = $(this).height();
-                  console.log('esta es la mas larga:' highestBox);
+                  console.log('esta es la mas larga:' + highestBox);
                 }
 
               });
