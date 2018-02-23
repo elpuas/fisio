@@ -1,7 +1,9 @@
 jQuery(document).ready(function( $ ) {
     console.log('jQuery');
-  if ( $('.fisioEventsDate').length > 0 ) {
-    eventsDate = $('.fisioEventsDate > div');
-    console.log(eventsDate);
- }
+
+ $.when( $('.fisioEventsDate').length > 0 ).done(
+   function( eventsDateMod ) {
+   eventsDate = $('.fisioEventsDate > div');
+   console.log(eventsDate);
+  });
 });
