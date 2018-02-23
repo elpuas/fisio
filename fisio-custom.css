@@ -306,9 +306,25 @@ img.ls-layer {
 }
 .fisio-prof__grid--container > div .wpb_wrapper p {
     font-size: 14px;
-    padding: 1rem;
+    padding:0 1rem;
     line-height: 0.95rem;
 }
 .fisio-prof__grid--container > div .wpb_wrapper {
     background: white;
+}
+
+.fisio-prof__grid {
+    padding: 2rem 0 4rem;
+}
+
+.fisio__prof--image {
+    margin-bottom: 0.5rem;
+    border-bottom: solid 1px lightgray;
+}
+
+.fisio__prof--image img {
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -1px;
 }
