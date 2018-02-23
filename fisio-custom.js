@@ -11,12 +11,10 @@ jQuery(document).ready(function( $ ) {
     }
     waitForElement(".fisioEventsDate",function(){
       console.log("Cargo Fisio");
-      var eventsDate = $(".fisioEventsDate p").text().replace('/', '');
-      console.log(eventsDate);
-      console.log(this);
-      eventsDate.html(function(i, v) {
-        return v.replace(/(\d)/g, '<span>$1</span>');
-      });
+      var eventsDate = $(".fisioEventsDate p").text().replace(/\//g, '<br />');
+      console.log("Sin Separator: " + eventsDate + "\n");
+      eventsDate = eventsDate.substring( 0, result.length-4 );
+      console.log("Sin 2018: " + eventsDate + "\n");
     });
 
  /**
