@@ -11,11 +11,37 @@ jQuery(document).ready(function( $ ) {
     }
     waitForElement(".fisioEventsDate",function(){
       console.log("Cargo Fisio");
-      var eventsDate = $(".fisioEventsDate p").text().replace(/\//g, '<br />');
+      var eventsDate = $(".fisioEventsDate").text().slice();
       console.log("Sin Separator: " + eventsDate + "\n");
-      eventsDate = eventsDate.substring( 0, result.length-4 );
-      console.log("Sin 2018: " + eventsDate + "\n");
     });
+
+    var whiteBackground = $('.fisio-prof__grid--container');
+
+    if( whiteBackground.length > 0 ) {
+            // console.log('Si Existe');
+            // Select and loop the container element of the elements you want to equalise
+            whiteBackground.each(function(){
+
+              // Cache the highest
+              var highestBox = 0;
+
+              // Select and loop the elements you want to equalise
+              $('.wpb_wrapper', this).each(function(){
+                console.log(this);
+
+                // If this box is higher than the cached highest then store it
+                if($(this).height() > highestBox) {
+                  highestBox = $(this).height();
+                  // console.log(highestBox);
+                }
+
+              });
+
+              // Set the height of all those children to whichever was highest
+              $('.fisio-prof__grid--container > .wpb_wrapper').css({"height" : (highestBox + "px")});
+
+            });
+        }
 
  /**
    function( eventsDateMod ) {
