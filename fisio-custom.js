@@ -38,7 +38,7 @@ jQuery(document).ready(function( $ ) {
               });
 
               // Set the height of all those children to whichever was highest
-              $('.fisio-prof__grid--container .wpb_wrapper').css({"height" : (highestBox + "px")});
+              $('.fisio-prof__grid--container > .wpb_wrapper').css({"height" : (highestBox + "px")});
 
             });
         }
