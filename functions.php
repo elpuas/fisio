@@ -51,6 +51,10 @@ function add_and_remove() {
         add_action( 'storefront_header', 'storefront_header_cart', 20 );
 }
 
+add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
+function load_dashicons_front_end() {
+  wp_enqueue_style( 'dashicons' );
+}
 
 /**
 * Hook into Footer and echo Contact Form

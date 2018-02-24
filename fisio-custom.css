@@ -328,3 +328,12 @@ img.ls-layer {
     padding: 0;
     margin-bottom: -1px;
 }
+
+.site-footer {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.site-footer a, .site-footer p, .site-footer h3 {
+  color: white;
+}
