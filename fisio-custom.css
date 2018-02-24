@@ -332,8 +332,59 @@ img.ls-layer {
 .site-footer {
     background-color: var(--secondary-color);
     color: white;
+    padding-bottom: 1rem;
 }
 
-.site-footer a, .site-footer p, .site-footer h3 {
-  color: white;
+.site-footer a, .site-footer p, .site-footer h3, .site-footer a:not(.button) {
+  color: white !important;
+}
+
+.footer-widget-3 .widget_text h2 {
+    color: white;
+    margin: 0;
+}
+
+.footer-widgets {
+    padding: 1rem;
+}
+
+.site-footer .widget_media_image {
+    margin-bottom: 1rem;
+}
+
+.widget_nav_menu ul li a {
+    color: white !important;
+    text-transform: uppercase;
+    line-height: 2rem;
+}
+
+.widget_nav_menu ul li:before {
+  content: none;
+}
+
+.site-info {
+    padding: 0;
+    text-align: center;
+
+}
+
+
+.site-info p {
+  color: lightgray !important;
+}
+
+.site-info p a {
+  color: fuchsia;
+}
+
+.textwidget p:first-child {
+    margin-bottom: 0;
+}
+
+.textwidget {
+  padding-top: 1rem;
+}
+
+.site-footer .widget {
+    margin-bottom: 0;
 }
