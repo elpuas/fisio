@@ -373,8 +373,8 @@ img.ls-layer {
   color: lightgray !important;
 }
 
-.site-info p a {
-  color: fuchsia;
+.site-footer .site-info p a {
+  color: fuchsia !important;
 }
 
 .textwidget p:first-child {
