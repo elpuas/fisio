@@ -309,8 +309,9 @@ img.ls-layer {
     padding:0 1rem 1rem;
     line-height: 0.95rem;
 }
-.fisio-prof__grid--container > div .wpb_wrapper {
+.fisio-prof__grid--container > div > .wpb_wrapper {
     background: white;
+    min-height: 450px;
 }
 
 .fisio-prof__grid {
