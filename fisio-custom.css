@@ -214,7 +214,7 @@ img.ls-layer {
     background-color: white;
 }
 
-.fisio-home__contact form input {
+.fisio-home__contact form input, .fisio-contact__grid form input {
     width: 100%;
     background: transparent;
     border: 1px solid lightgray;
@@ -274,7 +274,7 @@ img.ls-layer {
     margin-bottom: 0;
 }
 
-.fisio__register--fields .wpcf7-submit {
+.fisio__register--fields .wpcf7-submit, .fisio-contact__grid .wpcf7-submit {
     background-color: black;
     color: white;
     text-transform: uppercase;
