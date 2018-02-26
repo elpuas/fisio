@@ -56,6 +56,38 @@ function load_dashicons_front_end() {
   wp_enqueue_style( 'dashicons' );
 }
 
+if ( ! function_exists( 'storefront_primary_navigation' ) ) {
+	/**
+	 * Display Primary Navigation
+	 *
+	 * @since  1.0.0
+	 * @return void
+	 */
+	function storefront_primary_navigation() {
+		?>
+		<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_html_e( 'Primary Navigation', 'storefront' ); ?>">
+		<button class="menu-toggle" aria-controls="site-navigation" aria-expanded="false"><span><?php echo esc_attr( apply_filters( 'storefront_menu_toggle_text', __( ' ', 'storefront' ) ) ); ?></span></button>
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location'	=> 'primary',
+					'container_class'	=> 'primary-navigation',
+					)
+			);
+
+			wp_nav_menu(
+				array(
+					'theme_location'	=> 'handheld',
+					'container_class'	=> 'handheld-navigation',
+					)
+			);
+			?>
+		</nav><!-- #site-navigation -->
+		<?php
+	}
+}
+do_action( 'storefront_primary_navigation');
+
 /**
 * Hook into Footer and echo Contact Form
 *  // Insert text below the Featured Products title

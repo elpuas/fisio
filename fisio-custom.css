@@ -388,4 +388,11 @@ img.ls-layer {
 
 .site-footer .widget {
     margin-bottom: 0;
+
+}
+
+@media screen and (max-width: 425px) {
+  .fisio__row--floating {
+    display: none;
+  }
 }
