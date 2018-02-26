@@ -1,5 +1,9 @@
 jQuery(document).ready(function( $ ) {
-  //
+  // Global Vars
+  var viewportWidth = $(window).width();
+  var viewportHeight = $(window).height();
+
+  // Wait For Elemen to Exist in DOM
   function waitForElement(elementPath, callBack){
       window.setTimeout(function(){
         if($(elementPath).length){
@@ -8,7 +12,24 @@ jQuery(document).ready(function( $ ) {
           waitForElement(elementPath, callBack);
         }
       },500)
-    }
+      }
+      waitForElement(".shm-close", function(){
+        $(".shm-close").text(" ");
+      });
+      waitForElement("#layerslider_1", function(){
+        if( viewportWidth < 425 ) {
+          console.log('is small than 425px');
+          $("#layerslider_1").css("height", viewportHeight);
+        }
+        console.log("width: " + viewportWidth + "\n" + "Height: " + viewportHeight );
+        $(window).resize(function() {
+          if( viewportWidth < 425 ) {
+            $("#layerslider_1").css("height", viewportHeight);
+          }
+        });
+      });
+
+
 
     /*
     waitForElement(".fisioEventsDate",function(){

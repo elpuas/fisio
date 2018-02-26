@@ -391,8 +391,20 @@ img.ls-layer {
 
 }
 
+#wpadminbar {
+  display: none;
+}
+
+/**
+ * Media Queries
+ * @type { Max Width 425px }
+ */
+
 @media screen and (max-width: 425px) {
   .fisio__row--floating {
     display: none;
+  }
+  .site-header .main-navigation {
+    width: 25% !important;
   }
 }
