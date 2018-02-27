@@ -391,8 +391,11 @@ img.ls-layer {
 
 }
 
-#wpadminbar {
-  display: none;
+a:focus, .button:focus, .button.alt:focus, .button.added_to_cart:focus,
+.button.wc-forward:focus, button:focus, input[type="button"]:focus,
+input[type="reset"]:focus, input[type="submit"]:focus {
+  outline:none !important;
+
 }
 
 /**
@@ -406,5 +409,35 @@ img.ls-layer {
   }
   .site-header .main-navigation {
     width: 25% !important;
+  }
+  #layerslider_1 {
+    height: 100vh !important;
+    background: black;
+  }
+  #layerslider_1 > div {
+    display: none;
+  }
+  button.menu-toggle {
+    background: transparent !important;
+    border: none !important;
+  }
+  button.menu-toggle:before {
+   background-color: white !important;
+  }
+
+  button.menu-toggle, button.menu-toggle:hover {
+    background-color: transparent !important;
+  }
+
+  button.menu-toggle:after, button.menu-toggle:before, button.menu-toggle span:before {
+    background-color: white !important;
+  }
+  button.menu-toggle span:before, button.menu-toggle:after, button.menu-toggle:before {
+    height: 4px;
+    width: 20px;
+    position: initial;
+  }
+  .menu {
+    background-color: var(--primary-color);
   }
 }
