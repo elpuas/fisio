@@ -443,6 +443,15 @@ body:not(.home) .site-header ul.menu li.current-menu-item > a {
  */
 
 @media screen and (max-width: 425px) {
+
+  .toggled .menu {
+    background-color: var(--primary-color) !important;
+  }
+
+  .storefront-handheld-footer-bar ul.columns-3 li a {
+    background-color: var(--primary-color) !important;
+}
+
   .fisio__row--floating {
     display: none;
   }
@@ -452,6 +461,10 @@ body:not(.home) .site-header ul.menu li.current-menu-item > a {
   #layerslider_1 {
     height: 100vh !important;
     background: black;
+    background-image: url(https://fisiocr.elpuasdev.com/wp-content/uploads/2018/03/menucover.jpg);
+    background-size: 100% 100%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
   }
   #layerslider_1 > div {
     display: none;
