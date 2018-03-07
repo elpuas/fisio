@@ -84,6 +84,14 @@ h1, h2, h3, h4 {
     padding: 0.5rem !important;
 }
 
+ul.sidebar-contact li i {
+    min-width: 25px;
+}
+
+ul.sidebar-contact li a {
+ text-decoration: none;
+}
+
 /**
  * Slider
  */
