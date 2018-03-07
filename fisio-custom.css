@@ -399,6 +399,17 @@ input[type="reset"]:focus, input[type="submit"]:focus {
 }
 
 /**
+ * Internal Pages
+ * Styles
+ */
+
+body:not(.home) .site-header {
+  background-color: black;
+  background-image: url('https://fisiocr.elpuasdev.com/wp-content/uploads/2018/03/menucover.jpg');
+  background-size: cover;
+}
+
+/**
  * Media Queries
  * @type { Max Width 425px }
  */
