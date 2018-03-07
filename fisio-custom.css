@@ -444,7 +444,7 @@ body:not(.home) .site-header ul.menu li.current-menu-item > a {
 
 @media screen and (max-width: 425px) {
 
-  .toggled .menu {
+  .handheld-navigation {
     background-color: var(--primary-color) !important;
   }
 
