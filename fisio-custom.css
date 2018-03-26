@@ -473,7 +473,7 @@ body:not(.home) .site-header ul.menu li.current-menu-item > a {
   #layerslider_1 {
     height: 100vh !important;
     background: black;
-    background-image: url(https://fisiocr.elpuasdev.com/wp-content/uploads/2018/03/menucover.jpg);
+    background-image: url(https://www.fisio.cr/wp-content/uploads/2018/03/splash-mobile.jpg);
     background-size: 100% 100%;
     background-position: bottom right;
     background-repeat: no-repeat;
@@ -481,6 +481,19 @@ body:not(.home) .site-header ul.menu li.current-menu-item > a {
   #layerslider_1 > div {
     display: none;
   }
+
+  #layerslider_1:before {
+    content: 'Formacion Todo el Año';
+    position: absolute;
+    z-index: 1050;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-headings);
+    font-size: 2rem
+  }
+
   button.menu-toggle {
     background: transparent !important;
     border: none !important;
