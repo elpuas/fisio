@@ -286,6 +286,7 @@ img.ls-layer {
 
 .fisio__row--text-block h3 {
     color: white;
+    font-size: 1rem;
 }
 
 .fisio__row--text-block p a {
@@ -318,6 +319,15 @@ img.ls-layer {
   .fisio-events__grid--title {
     font-size: 14px;
     margin-bottom: -10px;
+}
+
+h1.fisio__slider--heading2Lines {
+    font-size: 2.5rem;
+    white-space: initial;
+}
+
+.fisio__row--text-block {
+    margin-bottom: 0;
 }
 
 .fisio-prof__grid--container > div .wpb_wrapper h3 {
