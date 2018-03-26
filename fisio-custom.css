@@ -51,7 +51,7 @@ h1, h2, h3, h4 {
 
 .main-navigation ul.menu>li>a,
 .main-navigation ul.nav-menu>li>a {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.2rem;
 }
 
 .site-header ul.menu li.current-menu-item:after {
@@ -485,14 +485,19 @@ body:not(.home) .site-header ul.menu li.current-menu-item > a {
   #layerslider_1:before {
     content: 'Formacion Todo el Año';
     position: absolute;
-    z-index: 1050;
+    z-index: 1025;
     color: white;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: var(--font-headings);
-    font-size: 2rem
-  }
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+    width: 58vw;
+    border: solid 2px;
+    text-transform: uppercase;
+}
 
   button.menu-toggle {
     background: transparent !important;
@@ -516,5 +521,12 @@ body:not(.home) .site-header ul.menu li.current-menu-item > a {
   }
   .menu {
     background-color: var(--primary-color);
+  }
+  .fisio-events__grid--date {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .site-footer .menu {
+    background: transparent;
   }
 }
