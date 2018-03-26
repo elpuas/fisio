@@ -149,11 +149,13 @@ img.ls-layer {
 }
 
 .vc_row.wpb_row.vc_row-fluid.fisio__row--floating {
-  position: absolute;
-  z-index: 1045;
-  width: 100%;
-  margin: -10em auto 0;
-  max-width: 1060px;
+    position: absolute;
+    z-index: 1045;
+    width: 100%;
+    margin: -10em auto 0;
+    max-width: 1060px;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .fisio__row--floating > .vc_col-sm-4 > .vc_column-inner > .wpb_wrapper {
