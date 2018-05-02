@@ -534,3 +534,11 @@ body:not(.home) .site-header ul.menu li.current-menu-item > a {
 .page-id-52 form input:not(.wpcf7-submit) {
     width: 100%;
 }
+
+.fisio-curso__hero-row .vc_grid-item.vc_clearfix.vc_col-sm-3.vc_grid_filter-item.vc_visible-item.none.animated {
+    float: left;
+}
+
+.wpb_single_image.wpb_content_element.fisio-curso__grid--image.vc_align_center {
+    min-height: 195px !important;
+}
