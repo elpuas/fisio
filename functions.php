@@ -67,6 +67,24 @@ function fisio_storefront_menu_toggle_text( $text ) {
 	return $text;
 }
 
+// Hide Admin Items
+
+add_action('admin_head', 'mdo_adminizer');
+
+function mdo_adminizer(){
+  global $current_user;
+  get_currentuserinfo();
+
+  if ( $current_user->user_email !== "elpuas@gmail.com" ) {
+    echo '<style>
+            #toplevel_page_vc-general, #menu-plugins, #menu-appearance,
+            li#menu-dashboard ul.wp-submenu  {
+              display: none;
+            }
+          </style>';
+          }
+    }
+
 /**
 * Hook into Footer and echo Contact Form
 *  // Insert text below the Featured Products title
