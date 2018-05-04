@@ -553,10 +553,10 @@ body:not(.home) .site-header ul.menu li.current-menu-item > a {
     text-align: center;
 }
 
-a.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-square.vc_btn3-style-custom {
+.fisio-curso__grid--woo-data a.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-square.vc_btn3-style-custom {
     color: white !important;
     background-color: orange !important;
-    font-family: roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     border-radius: 4px;
     text-transform: capitalize;
