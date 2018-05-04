@@ -64,7 +64,7 @@ h1, h2, h3, h4 {
 }
 
 .site-header-cart {
-    width: 140px !important;
+    width: 160px !important;
     position: fixed;
     right: 20px;
     z-index: 1041;
@@ -541,4 +541,23 @@ body:not(.home) .site-header ul.menu li.current-menu-item > a {
 
 .wpb_single_image.wpb_content_element.fisio-curso__grid--image.vc_align_center {
     min-height: 195px !important;
+    padding-top: 20px;
+}
+
+.vc_btn3.vc_btn3-color-blue, .vc_btn3.vc_btn3-color-blue.vc_btn3-style-flat {
+    color: #fff;
+    background-color: orange;
+}
+
+.vc_col-sm-12.fisio-curso__grid--woo-data.vc_gitem-col.vc_gitem-col-align- {
+    text-align: center;
+}
+
+a.vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-square.vc_btn3-style-custom {
+    color: white !important;
+    background-color: orange !important;
+    font-family: roboto, sans-serif;
+    font-size: 14px;
+    border-radius: 4px;
+    text-transform: capitalize;
 }
